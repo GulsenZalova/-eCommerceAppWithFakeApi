@@ -70,7 +70,7 @@ ol, ul {
 }
 
 .header {
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 .header-items {
@@ -89,16 +89,15 @@ ol, ul {
 }
 
 .header-items-search a {
-  opacity: 0.5;
   color: #7f7f7f;
 }
 
 .header-items-search a i {
-  font-size: 25px;
+  font-size: 1.3rem;
 }
 
 .header-items-search a span {
-  font-size: 15px;
+  font-size: 0.8rem;
 }
 
 .header-items-search a:hover {
@@ -106,13 +105,13 @@ ol, ul {
 }
 
 .header-items-logo img {
-  width: 180px;
+  width: 12rem;
   height: auto;
 }
 
 .header-items-links a {
   color: #7f7f7f;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .header-items-links a:hover {
@@ -120,27 +119,78 @@ ol, ul {
 }
 
 .header-items-links a:nth-child(1) {
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 
 .header-items-links a:nth-child(2) {
-  opacity: 0.4;
-  font-size: 30px;
+  font-size: 1.7rem;
 }
 
 .header-items-links a:nth-child(3) {
-  font-size: 30px;
+  font-size: 1.7rem;
   position: relative;
-  opacity: 0.4;
 }
 
 .header-items-links a:nth-child(3) span {
   position: absolute;
   top: 0%;
   left: 70%;
-  font-size: 10px;
+  font-size: 0.625rem;
   background-color: #17a2b8;
   color: white;
-  padding: 5px;
+  padding: 0.4rem;
   border-radius: 50%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-item {
+  position: relative;
+  margin-right: 40px;
+}
+
+.navbar-item:hover .count {
+  -webkit-transform: translateX(-20%) scale(1);
+          transform: translateX(-20%) scale(1);
+}
+
+.navbar-item:hover a, .navbar-item i {
+  color: #17a2b8;
+}
+
+.navbar-item a {
+  margin-right: 5px;
+  color: #2d2c2c;
+}
+
+.navbar-item i {
+  color: #2d2c2c;
+  font-size: 15px;
+}
+
+.navbar-item .count {
+  text-align: center;
+  width: 50px;
+  height: 3px;
+  background-color: #17a2b8;
+  margin: 5px auto 1rem  auto;
+  text-align: center;
+  -webkit-transform: translateX(0) scale(0);
+          transform: translateX(0) scale(0);
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
